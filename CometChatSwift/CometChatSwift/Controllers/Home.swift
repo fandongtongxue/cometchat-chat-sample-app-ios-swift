@@ -168,7 +168,7 @@ extension Home {
                             UIApplication.shared.keyWindow?.rootViewController = main
                             self.showAlert(title: "", msg: "Logged out Successfully")
                         }
-                    case .failure(let error):
+                    case .onError(let error):
                         DispatchQueue.main.async {
                             self.showAlert(title: "Error", msg: error.errorDescription)
                         }

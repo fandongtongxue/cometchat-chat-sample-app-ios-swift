@@ -7,7 +7,7 @@ import Foundation
 import UIKit
 
 class Constants {
-    static var appId = <# Enter Your App ID Here #>
-    static var authKey = <# Enter Your AuthKey Here #>
-    static var region = <# Enter Your Region Code Here #>
+    static var appId = "2442534cc0f56043"
+    static var authKey = "8763679e79a94b717cc6aa661e251711a1fc0ca1"
+    static var region = "US"
 }

@@ -100,7 +100,7 @@ class CreateUser: UIViewController {
                                 self.loginWithUID(UID: uid)
                             }
                             
-                        case .failure(let error):
+                        case .onError(let error):
                             DispatchQueue.main.async {
                                 self.showAlert(title: "Error", msg: error.errorDescription)
                             }
@@ -126,7 +126,7 @@ class CreateUser: UIViewController {
                         self.navigationController?.pushViewController(mainVC, animated: true)
                     }
                 }
-            case .failure(let error):
+            case .onError(let error):
                 DispatchQueue.main.async {
                     CustomLoader.instance.hideLoaderView()
                     self.showAlert(title: "Error", msg: error.errorDescription)

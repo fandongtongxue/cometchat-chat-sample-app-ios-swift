@@ -77,7 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 .subscribePresenceForAllUsers()
                 .build()
             
-            CometChatUIKit.init(authSettings: uikitSettings, result: {
+            CometChatUIKit.init(uiKitSettings: uikitSettings, result: {
                 result in
                 switch result {
                 case .success(_):

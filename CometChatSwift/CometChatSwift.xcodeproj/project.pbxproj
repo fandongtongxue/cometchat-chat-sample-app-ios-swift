@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -68,6 +68,7 @@
 		DBFBC47323A7B9230027938E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFBC47123A7B9230027938E /* Main.storyboard */; };
 		DBFBC47523A7B9240027938E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFBC47423A7B9240027938E /* Assets.xcassets */; };
 		DBFBC47823A7B9240027938E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFBC47623A7B9240027938E /* LaunchScreen.storyboard */; };
+		DCEB574B2A9750E10092001B /* CometChatUIKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DCEB574A2A9750E10092001B /* CometChatUIKitSwift */; };
 		FBA293102434D9A7006DCCA1 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA2930E2434D9A7006DCCA1 /* AppConstants.swift */; };
 		FBA293112434D9A7006DCCA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA2930F2434D9A7006DCCA1 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -196,6 +197,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCEB574B2A9750E10092001B /* CometChatUIKitSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +601,7 @@
 			);
 			name = CometChatSwift;
 			packageProductDependencies = (
+				DCEB574A2A9750E10092001B /* CometChatUIKitSwift */,
 			);
 			productName = Demo;
 			productReference = DBFBC46A23A7B9230027938E /* CometChat KitchenSink.app */;
@@ -651,6 +654,7 @@
 			);
 			mainGroup = DBFBC46123A7B9230027938E;
 			packageReferences = (
+				DCEB57492A9750E10092001B /* XCRemoteSwiftPackageReference "ios-swift-chat-ui-kit" */,
 			);
 			productRefGroup = DBFBC46B23A7B9230027938E /* Products */;
 			projectDirPath = "";
@@ -833,7 +837,7 @@
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K456T8RD7Z;
+				DEVELOPMENT_TEAM = F9N98X7P4L;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "CometChat KitchenSink UITests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -855,7 +859,7 @@
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K456T8RD7Z;
+				DEVELOPMENT_TEAM = F9N98X7P4L;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "CometChat KitchenSink UITests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -879,7 +883,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K456T8RD7Z;
+				DEVELOPMENT_TEAM = F9N98X7P4L;
 				INFOPLIST_FILE = "CometChat KitchenSinkTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -904,7 +908,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K456T8RD7Z;
+				DEVELOPMENT_TEAM = F9N98X7P4L;
 				INFOPLIST_FILE = "CometChat KitchenSinkTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1054,7 +1058,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CometChatSwift/CometChat KitchenSink.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = K456T8RD7Z;
+				DEVELOPMENT_TEAM = F9N98X7P4L;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1070,7 +1074,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.inscripts.cometchat.dev2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaobingkj.cometchat.dev2;
 				PRODUCT_NAME = "CometChat KitchenSink";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1084,7 +1088,7 @@
 				CODE_SIGN_ENTITLEMENTS = "CometChatSwift/CometChat KitchenSink.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = K456T8RD7Z;
+				DEVELOPMENT_TEAM = F9N98X7P4L;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1101,7 +1105,7 @@
 				);
 				MARKETING_VERSION = 2.1.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.inscripts.cometchat.dev2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaobingkj.cometchat.dev2;
 				PRODUCT_NAME = "CometChat KitchenSink";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1148,6 +1152,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DCEB57492A9750E10092001B /* XCRemoteSwiftPackageReference "ios-swift-chat-ui-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cometchat-pro/ios-swift-chat-ui-kit.git";
+			requirement = {
+				branch = v4;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCEB574A2A9750E10092001B /* CometChatUIKitSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCEB57492A9750E10092001B /* XCRemoteSwiftPackageReference "ios-swift-chat-ui-kit" */;
+			productName = CometChatUIKitSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DBFBC46223A7B9230027938E /* Project object */;
 }

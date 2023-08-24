@@ -117,7 +117,7 @@ class Login: UIViewController {
                             self.navigationController?.pushViewController(mainVC, animated: true)
                         }
                     }
-                case .failure(let error):
+                case .onError(let error):
                     DispatchQueue.main.async {
                         CustomLoader.instance.hideLoaderView()
                         self.showAlert(title: "Error", msg: error.errorDescription)
