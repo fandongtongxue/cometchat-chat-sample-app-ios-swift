@@ -8,9 +8,9 @@ import UIKit
 
 class Constants {
     
-    static var appId = "ENTER APP ID HERE"
-    static var authKey = "ENTER AUTH KEY HERE"
-    static var region = "ENTER REGION CODE HERE"
+    static var appId = "2442534cc0f56043"
+    static var authKey = "8763679e79a94b717cc6aa661e251711a1fc0ca1"
+    static var region = "US"
     
 }
 

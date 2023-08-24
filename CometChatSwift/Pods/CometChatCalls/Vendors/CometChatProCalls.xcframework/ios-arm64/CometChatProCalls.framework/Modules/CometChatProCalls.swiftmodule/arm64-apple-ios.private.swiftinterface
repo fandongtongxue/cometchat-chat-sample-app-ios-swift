@@ -1,0 +1,85 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 effective-4.2 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name CometChatProCalls
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import CometChatProCalls
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+@objc public protocol CallsEventsDelegate {
+  @objc func onCallEnded()
+  @objc func onCallEndButtonPressed()
+  @objc func onUserJoined(user: Foundation.NSDictionary)
+  @objc func onUserLeft(user: Foundation.NSDictionary)
+  @objc func onUserListChanged(userList: Foundation.NSArray)
+  @objc func onAudioModeChanged(audioModeList: Foundation.NSArray)
+  @objc func onCallSwitchedToVideo(info: Foundation.NSDictionary)
+  @objc func onUserMuted(info: Foundation.NSDictionary)
+  @objc func onRecordingToggled(info: Foundation.NSDictionary)
+}
+@objc @_inheritsConvenienceInitializers final public class CallAppSettings : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(CallSetting) public class CallSettings : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc final public class CometChatCalls : ObjectiveC.NSObject {
+  @objc public static let callSettingsBuilder: CometChatProCalls.CallSettingsBuilder
+  @discardableResult
+  @objc public init(callsAppSettings: CometChatProCalls.CallAppSettings, completion: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
+  @objc public static func generateToken(authToken: Foundation.NSString?, sessionID: Foundation.NSString?, completion: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
+  @objc public static func startSession(callToken: Swift.String, callSetting: CometChatProCalls.CallSettings, completion: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
+  @objc public static func endSession()
+  @objc public static func switchCamera()
+  @objc public static func audioMuted(_ value: Swift.Bool)
+  @objc public static func videoPaused(_ value: Swift.Bool)
+  @objc public static func setAudioMode(mode: Swift.String)
+  @objc public static func enterPIPMode()
+  @objc public static func exitPIPMode()
+  @objc public static func switchToVideoCall()
+  @objc public static func startRecording()
+  @objc public static func stopRecording()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class CallAppSettingsBuilder : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @discardableResult
+  @objc public func setAppId(_ value: Swift.String) -> Self
+  @discardableResult
+  @objc public func setRegion(_ value: Swift.String) -> Self
+  @discardableResult
+  @objc public func setHost(_ value: Swift.String?) -> Self
+  @objc public func build() -> CometChatProCalls.CallAppSettings
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(CallSettingBuilder) public class CallSettingsBuilder : ObjectiveC.NSObject {
+  @objc public func setDefaultLayout(_ value: Swift.Bool) -> Self
+  @objc public func setIsAudioOnly(_ value: Swift.Bool) -> Self
+  @objc public func setIsSingleMode(_ value: Swift.Bool) -> Self
+  @objc public func setShowSwitchToVideoCall(_ value: Swift.Bool) -> Self
+  @objc public func setEnableVideoTileClick(_ value: Swift.Bool) -> Self
+  @objc public func setEnableDraggableVideoTile(_ value: Swift.Bool) -> Self
+  @objc public func setEndCallButtonDisable(_ value: Swift.Bool) -> Self
+  @objc public func setShowRecordingButton(_ value: Swift.Bool) -> Self
+  @objc public func setStartRecordingOnCallStart(_ value: Swift.Bool) -> Self
+  @objc public func setSwitchCameraButtonDisable(_ value: Swift.Bool) -> Self
+  @objc public func setMuteAudioButtonDisable(_ value: Swift.Bool) -> Self
+  @objc public func setPauseVideoButtonDisable(_ value: Swift.Bool) -> Self
+  @objc public func setAudioModeButtonDisable(_ value: Swift.Bool) -> Self
+  @objc public func setStartAudioMuted(_ value: Swift.Bool) -> Self
+  @objc public func setStartVideoMuted(_ value: Swift.Bool) -> Self
+  @objc public func setAvatarMode(_ value: Foundation.NSString) -> Self
+  @objc public func setMode(_ value: Foundation.NSString) -> Self
+  @objc public func setDefaultAudioMode(_ value: Foundation.NSString) -> Self
+  @objc public func setVideoContainer(_ value: Foundation.NSMutableDictionary) -> Self
+  @objc public func setView(_ value: UIKit.UIView) -> Self
+  @objc public func setVideoSettings(_ value: Foundation.NSMutableDictionary) -> Self
+  @objc public func setDelegate(_ value: CometChatProCalls.CallsEventsDelegate) -> Self
+  @objc public func build() -> CometChatProCalls.CallSettings
+  @objc override dynamic public init()
+  @objc deinit
+}
