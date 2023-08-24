@@ -17,11 +17,11 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "CometChatPro.xcframework/ios-arm64_x86_64-simulator")
-    echo "simulator"
-    ;;
   "CometChatPro.xcframework/ios-arm64")
     echo ""
+    ;;
+  "CometChatPro.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
     ;;
   "CometChatStarscream.xcframework/ios-arm64_armv7")
     echo ""
@@ -35,11 +35,11 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "CometChatPro.xcframework/ios-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
-    ;;
   "CometChatPro.xcframework/ios-arm64")
     echo "arm64"
+    ;;
+  "CometChatPro.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   "CometChatStarscream.xcframework/ios-arm64_armv7")
     echo "arm64 armv7"
@@ -129,6 +129,6 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/CometChatPro/Vendors/CometChatPro.xcframework" "CometChatPro" "framework" "ios-arm64_x86_64-simulator" "ios-arm64"
+install_xcframework "${PODS_ROOT}/CometChatPro/Vendors/CometChatPro.xcframework" "CometChatPro" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/CometChatPro/Vendors/CometChatStarscream.xcframework" "CometChatPro" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
 
